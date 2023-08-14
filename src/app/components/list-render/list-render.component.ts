@@ -15,4 +15,10 @@ export class ListRenderComponent {
     {name: 'Bob', type:"Horse", age: 24},
   ];
 
+  animalDetails = ''
+
+  showAge(animal: Animal){
+    this.animalDetails = `O pet ${animal.name} tem ${animal.age} anos!`;
+  }
+
 }
